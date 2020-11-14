@@ -7,11 +7,9 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo__wrapper">
-          <a class="page-header__logo">
-            <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
-          </a>
-        </div>
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
+        </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
@@ -37,8 +35,8 @@
             <li class="news-list__item">
               <a href="#">Распродажа</a>
             </li>
-            <p class="main-nav__text">Бесплатная доставка по России</p>
           </ul>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
         </nav>
       </div>
     </header>
@@ -49,10 +47,10 @@
           <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
         </div>
         <ul class="promo__list product-type">
-          <li class="product-type_item">
+          <li class="product-type__item">
             <a href="#" class="product-type__link"><span>Предметы интерьера</span></a>
           </li>
-          <li class="product-type_item">
+          <li class="product-type__item">
             <a href="#" class="product-type__link"><span>Детские игрушки</span></a>
           </li>
         </ul>
@@ -60,25 +58,22 @@
       <section class="featured">
         <div class="featured__title-wrapper">
           <h2 class="featured__title">Вязаные корзинки</h2>
-          <span class="featured__week-top">ТОВАР НЕДЕЛИ</span>
+          <p class="featured__week-top">ТОВАР НЕДЕЛИ</p>
         </div>
         <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <!--          таблица или список?-->
         <table class="featured__list">
-          <tbody>
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </tbody>
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
         </table>
         <div class="featured__img-wrapper">
           <img src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки">
@@ -118,54 +113,46 @@
             <button class="slider__button" type="button">>Предыдущий отзыв</button>
             <button class="slider__button" type="button">Следующий отзыв</button>
           </div>
-          <div class="reviews__button-wrapper">
-            <a class="button reviews__button" href="#">Написать</a>
-          </div>
+          <a class="button reviews__button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-<!--          таблица или список?-->
           <table>
-            <tbody>
             <tr>
               <td>e-mail:</td>
-              <td>info@mimimishkashop.ru</td>
+              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
             <tr>
               <td>адрес:</td>
               <td>г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
             </tr>
-            </tbody>
           </table>
         </div>
         <div class="contacts__map"></div>
-        <div class="contacts__wrapper-button">
-          <a class="button contacts__button" href="#">Напишите нам</a>
-        </div>
+        <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer__logo">
+      <div class="page-footer__logo">
         <a href="#">
           <img src="https://via.placeholder.com/102x35" alt="Логотип">
         </a>
       </div>
-      <ul class="footer__social-list">
-        <li class="social-item">
-          <a href="#">ins</a>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">ins</a>
         </li>
-        <li class="social-item">
-          <a href="#">fb</a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">fb</a>
         </li>
-        <li class="social-item">
-          <a href="#">tw</a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">tw</a>
         </li>
       </ul>
-      <div class="footer__copyright">
-        <a class="footer__copyright-link" href="#">Разработано <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="HTML academy"></a>
-        <!--тут везде будет svg-->
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="HTML academy"></a>
       </div>
     </footer>
   </body>
