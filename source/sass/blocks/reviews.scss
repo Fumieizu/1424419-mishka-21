@@ -1,0 +1,37 @@
+.reviews__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 59px 0 14px;
+}
+
+.reviews__item {
+  margin: 0;
+  width: 256px;
+}
+
+.reviews__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $second-black;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.reviews__author-link {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: $second-black;
+}
+
+.reviews__button {
+  margin-top: 38px;
+  padding: 14px 78px;
+}

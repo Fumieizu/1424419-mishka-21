@@ -1,0 +1,23 @@
+.site-list__item {
+  display: block;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  a {
+    display: flex;
+    align-self: center;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-left: 50px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
