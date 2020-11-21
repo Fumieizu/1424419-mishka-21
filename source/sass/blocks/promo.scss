@@ -1,6 +1,9 @@
 .promo {
   background-image: url("../img/hero-mobile@1.jpg");
   background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% -15%;
+  background-color: $promo-background;
 }
 
 .promo__title {
@@ -9,5 +12,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }

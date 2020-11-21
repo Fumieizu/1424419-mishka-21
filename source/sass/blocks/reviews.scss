@@ -1,13 +1,23 @@
+.reviews {
+  @include central;
+  margin-top: 59px;
+}
+
 .reviews__title {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  margin: 59px 0 14px;
+  margin: 0 0 14px;
 }
 
 .reviews__item {
+  display: none;
   margin: 0;
   width: 256px;
+}
+
+.reviews__item--active {
+  display: block;
 }
 
 .reviews__text {

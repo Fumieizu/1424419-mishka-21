@@ -1,3 +1,7 @@
+.contacts {
+  @include central;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
@@ -14,8 +18,10 @@
   padding-left: 25px;
 }
 
-.contacts__item--second {
-  padding-top: 25px;
+.contacts__item:first-child {
+  .contacts__value {
+    padding-bottom: 25px;
+  }
 }
 
 .contacts__list {
@@ -23,11 +29,6 @@
   font-size: 14px;
   line-height: 30px;
   color: $second-black;
-
-  tbody {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .contacts__mail {

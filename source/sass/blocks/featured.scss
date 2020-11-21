@@ -1,8 +1,13 @@
+.featured {
+  @include central;
+  margin-top: 31px;
+}
+
 .featured__title {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  margin: 31px 0 0;
+  margin: 0;
   color: $basic-black;
 }
 
