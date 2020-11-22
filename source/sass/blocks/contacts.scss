@@ -1,0 +1,53 @@
+.contacts {
+  @include central;
+}
+
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 89px 0 28px;
+}
+
+.contacts__field {
+  vertical-align: top;
+}
+
+.contacts__value {
+  width: 180px;
+  padding-left: 25px;
+}
+
+.contacts__item:first-child {
+  .contacts__value {
+    padding-bottom: 25px;
+  }
+}
+
+.contacts__list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $second-black;
+}
+
+.contacts__mail {
+  color: $second-black;
+  border-bottom: 1px solid $mail-link;
+
+  &:hover,
+  &:focus {
+    color: $mail-hover;
+    border-color: $mail-hover;
+  }
+
+  &:active {
+    border-color: $mail-active;
+  }
+}
+
+.contacts__button {
+  padding: 14px 52px;
+  margin-top: 42px;
+  margin-bottom: 39px;
+}
