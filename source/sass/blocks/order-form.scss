@@ -1,0 +1,19 @@
+.order-form {
+  @include central;
+}
+
+.order-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__button {
+  padding: 14px 41px;
+}
+
+.order-form__important-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $second-black;
+}

@@ -1,0 +1,122 @@
+.order-fieldset__title {
+  @include form-green-line;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  margin: 0;
+}
+
+.order-fieldset__list {
+  @include list-style-none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 31px;
+}
+
+.order-fieldset__item {
+  padding-top: 24px;
+  padding-left: 61px;
+}
+
+.order-fieldset__color-list {
+  @include list-style-none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 33px;
+}
+
+.order-fieldset__color-item {
+  padding-top: 23px;
+  padding-left: 61px;
+}
+
+.order-fieldset__name-list {
+  @include list-style-none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-top: 8px;
+  margin-bottom: 35px;
+}
+
+.order-fieldset__name-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+}
+
+.order-fieldset__contacts-label {
+  @include form-green-line;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  margin-bottom: 5px;
+  margin-top: 22px;
+}
+
+.order-fieldset__contacts-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-fieldset__title--comment {
+  margin-top: 35px;
+  margin-bottom: 23px;
+}
+
+.order-fieldset__input {
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid $basic-black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 2px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 18px;
+  color: $second-black;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $mail-link;
+  }
+}
+
+.order-fieldset__textarea {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 17px 17px 0 17px;
+  border: 2px solid $basic-black;
+  width: 260px;
+  height: 142px;
+  resize: vertical;
+  color: $second-black;
+  box-sizing: border-box;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $mail-link;
+    outline: none;
+  }
+}
