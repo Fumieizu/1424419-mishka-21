@@ -8,4 +8,24 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  box-sizing: border-box;
+}
+
+@mixin form-green-line {
+  span {
+    padding-right: 22px;
+    background-color: $basic-white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $green;
+    right: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    z-index: -1;
+  }
 }
