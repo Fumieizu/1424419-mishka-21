@@ -1,13 +1,16 @@
 .button {
   display: inline-block;
-  padding: 14px 80px;
+  padding: 14px;
+  width: 260px;
   font-weight: bold;
   font-size: 18px;
+  box-sizing: border-box;
   line-height: 20px;
   color: $second-black;
   background: $basic-white;
   text-transform: uppercase;
   border: 2px solid $second-black;
+  text-align: center;
 
   &:hover,
   &:focus {

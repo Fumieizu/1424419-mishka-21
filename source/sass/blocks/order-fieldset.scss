@@ -17,8 +17,8 @@
 }
 
 .order-fieldset__item {
-  padding-top: 24px;
-  padding-left: 61px;
+  min-height: 42px;
+  display: flex;
 }
 
 .order-fieldset__color-list {
@@ -29,9 +29,17 @@
   margin-bottom: 33px;
 }
 
+.order-fieldset__radio-label {
+  padding: 12px 30px 10px 63px;
+}
+
 .order-fieldset__color-item {
-  padding-top: 23px;
-  padding-left: 61px;
+  min-height: 38px;
+  display: flex;
+}
+
+.order-fieldset__checkbox-label {
+  padding: 10px 30px 10px 63px;
 }
 
 .order-fieldset__name-list {
