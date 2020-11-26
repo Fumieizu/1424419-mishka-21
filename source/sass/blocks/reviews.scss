@@ -4,7 +4,7 @@
 }
 
 .reviews__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 14px;
@@ -21,21 +21,21 @@
 }
 
 .reviews__text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $second-black;
 }
 
 .reviews__author-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   font-style: normal;
 }
 
 .reviews__author-link {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 30px;
   color: $second-black;

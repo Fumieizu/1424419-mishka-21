@@ -1,7 +1,7 @@
 .order-fieldset__title {
   @include form-green-line;
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $green;
@@ -10,7 +10,7 @@
 
 .order-fieldset__list {
   @include list-style-none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 31px;
@@ -23,7 +23,7 @@
 
 .order-fieldset__color-list {
   @include list-style-none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 33px;
@@ -44,7 +44,7 @@
 
 .order-fieldset__name-list {
   @include list-style-none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   margin-top: 8px;
@@ -60,7 +60,7 @@
 .order-fieldset__contacts-label {
   @include form-green-line;
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $green;
@@ -85,13 +85,13 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 2px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 19px;
   line-height: 18px;
   color: $second-black;
 
   &::placeholder {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height: 18px;
     opacity: 0.3;
@@ -106,7 +106,7 @@
 
 .order-fieldset__textarea {
   font-family: inherit;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   padding: 17px 17px 0 17px;
