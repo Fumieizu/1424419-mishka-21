@@ -1,6 +1,6 @@
 .main-nav__list {
   @include list-style-none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
@@ -11,7 +11,7 @@
 
 .main-nav__text {
   display: none;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: $second-black;
