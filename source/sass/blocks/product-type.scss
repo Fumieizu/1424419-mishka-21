@@ -34,3 +34,16 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .product-type {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .product-type__item {
+    width: 50%;
+  }
+}

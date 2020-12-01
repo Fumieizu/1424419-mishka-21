@@ -1,8 +1,5 @@
 .main-nav__list {
   @include list-style-none;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .main-nav__list a {
@@ -15,4 +12,37 @@
   font-size: 15px;
   line-height: 24px;
   color: $second-black;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__text {
+    display: block;
+    order: 3;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: auto;
+    padding-right: 50px;
+  }
 }
