@@ -5,25 +5,28 @@
 @media (min-width: $desktop-width) {
   .news-list {
     display: flex;
-    width: 50%;
-    border-bottom: 1px solid $light-grey;
+    flex-wrap: wrap;
+    width: 36%;
   }
 
   .news-list__item {
-    padding-top: 33px;
-    padding-bottom: 32px;
-    padding-left: 35px;
-
     &:first-child {
-      padding-left: 50px;
-      padding-right: 35px;
       border-right: 1px solid $light-grey;
+
+      a {
+        padding-left: 0;
+        padding-right: 35px;
+      }
     }
 
     a {
+      display: block;
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
+      padding-top: 33px;
+      padding-bottom: 32px;
+      padding-left: 35px;
     }
   }
 }

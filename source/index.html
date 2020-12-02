@@ -9,36 +9,38 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item user-list__search">
-                <a class="user-list__search-link" href="#"><img src="https://via.placeholder.com/18x18" width="18" height="18" alt="поиск"><span>Поиск по сайту</span></a>
-              </li>
-              <li class="user-list__item user-list__cart">
-                <a href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list news-list">
-              <li class="news-list__item">
-                <a href="#">Новые поступления</a>
-              </li>
-              <li class="news-list__item">
-                <a href="#">Распродажа</a>
-              </li>
-            </ul>
+            <a class="main-nav__logo">
+              <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item user-list__search">
+              <a class="user-list__search-link" href="#"><img src="https://via.placeholder.com/18x18" width="18" height="18" alt="поиск"><span>Поиск по сайту</span></a>
+            </li>
+            <li class="user-list__item user-list__cart">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list news-list">
+            <li class="news-list__item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="news-list__item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <div class="main-nav__delivery">
             <p class="main-nav__text">Бесплатная доставка по России</p>
           </div>
         </nav>
@@ -47,7 +49,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">Магазин мягких игрушек ручной работы "Мишка"</h1>
       <section class="promo">
-        <h2 class="promo__title">Милые штуки ручной<br>работы для дома</h2>
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Милые штуки ручной<br>работы для дома</h2>
+        </div>
         <ul class="promo__list product-type">
           <li class="product-type__item">
             <a href="#" class="product-type__link product-type__link--interior"><span>Предметы
@@ -140,7 +144,9 @@
             </tr>
           </table>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.308802156904!2d30.322985709411142!3d59.93873928976671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606939414925!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
     </main>

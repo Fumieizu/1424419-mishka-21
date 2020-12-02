@@ -54,6 +54,11 @@
 .contacts__map {
   height: 454px;
   width: 100%;
+
+  iframe {
+    width: 100%;
+    height: 454px;
+  }
 }
 
 .contacts__button {
@@ -90,6 +95,11 @@
   .contacts__map {
     height: 457px;
     width: 100%;
+
+    iframe {
+      width: 100%;
+      height: 457px;
+    }
   }
 
   .contacts__button {
@@ -109,9 +119,11 @@
     margin-right: auto;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 105px;
+    min-height: 457px;
+    margin-top: 200px;
   }
 
   .contacts__wrapper {
@@ -141,11 +153,19 @@
 
   .contacts__map {
     width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+
+    iframe {
+      width: 527px;
+      height: 457px;
+    }
   }
 
   .contacts__button {
-    position: absolute;
-    bottom: 50px;
-    left: 220px;
+    margin: 0;
+    margin-left: 175px;
+    margin-top: 84px;
   }
 }

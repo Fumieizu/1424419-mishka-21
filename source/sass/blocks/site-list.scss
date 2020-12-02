@@ -16,6 +16,8 @@
     padding-top: 26px;
     padding-bottom: 28px;
     padding-left: 76px;
+    padding-right: 20px;
+    box-sizing: border-box;
 
     &:hover,
     &:focus {
@@ -30,23 +32,28 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    order: 2;
+    order: 3;
     background-color: $promo-background;
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
+    width: 50%;
+    max-height: 0;
   }
 
   .site-list__item {
     box-shadow: none;
 
-    &:first-child {
-      padding-left: 50px;
-    }
-
     a {
       padding: 0;
+      padding-top: 19px;
       width: 167px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: 4;
   }
 }

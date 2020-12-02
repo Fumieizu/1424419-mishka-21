@@ -105,6 +105,7 @@
     flex-direction: column;
     margin-top: 37px;
     position: relative;
+    padding-right: 50%;
   }
 
   .featured__img-wrapper {
@@ -113,10 +114,14 @@
     right: 0;
     display: flex;
     margin-left: auto;
+    width: 334px;
+    height: 404px;
+    background-color: $green;
   }
 
   .featured__price-wrapper {
     width: 290px;
+    margin-top: 27px;
   }
 
   .featured__button {
@@ -126,7 +131,7 @@
 
 @media (min-width: $desktop-width) {
   .featured {
-    margin-top: 115px;
+    margin-top: 132px;
     max-width: 1150px;
   }
 
@@ -141,10 +146,25 @@
     order: 1;
     margin: 0;
     margin-right: 43px;
-    margin-left: 82px;
+    margin-left: 31px;
   }
 
   .featured__container {
-    margin-left: 225px;
+    margin-left: 175px;
+  }
+
+  .featured__img-wrapper {
+    background-color: $green;
+    width: 525px;
+    height: 636px;
+    bottom: 0;
+  }
+
+  .featured__text {
+    margin-bottom: 60px;
+  }
+
+  .featured__price-wrapper {
+    margin-top: 63px;
   }
 }

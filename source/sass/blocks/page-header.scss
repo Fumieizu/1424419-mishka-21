@@ -1,18 +1,5 @@
 @media (min-width: $tablet-width) {
   .page-header {
-    background: linear-gradient(#ffffff 78%, #f9f9f9 45%);
-  }
-
-  .page-header__logo {
-    position: absolute;
-    left: 5.8%;
-    top: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    left: 50%;
-    transform: translateX(-50%);
+    border-bottom: 1px solid $light-grey;
   }
 }
