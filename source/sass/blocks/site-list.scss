@@ -1,3 +1,9 @@
+.site-list {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .site-list__item {
   display: block;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
@@ -10,6 +16,8 @@
     padding-top: 26px;
     padding-bottom: 28px;
     padding-left: 76px;
+    padding-right: 20px;
+    box-sizing: border-box;
 
     &:hover,
     &:focus {
@@ -19,5 +27,33 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    order: 3;
+    background-color: $promo-background;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    width: 50%;
+    max-height: 0;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+
+    a {
+      padding: 0;
+      padding-top: 19px;
+      width: 167px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: 4;
   }
 }

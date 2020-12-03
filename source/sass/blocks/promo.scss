@@ -16,3 +16,38 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/hero-tablet@1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% -85px;
+    min-height: 763px;
+  }
+
+  .promo__title {
+    width: 500px;
+    padding-top: 110px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__wrapper {
+    height: 657px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    width: 700px;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

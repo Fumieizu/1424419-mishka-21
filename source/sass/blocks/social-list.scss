@@ -1,0 +1,15 @@
+.social-list {
+  @include list-style-none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+  }
+}
