@@ -21,3 +21,45 @@
   padding: 17px 30px 29px 30px;
   color: $second-black;
 }
+
+@media (min-width: $tablet-width) {
+  .page-content__header {
+    min-height: 226px;
+  }
+
+  .page-content__title {
+    width: 420px;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+
+  .page-content__description {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 54px 50px 36px;
+    box-sizing: border-box;
+    width: 772px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__header {
+    min-height: 272px;
+  }
+
+  .page-content__title {
+    width: 550px;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-content__description {
+    padding-top: 100px;
+    padding-left: 0;
+  }
+}

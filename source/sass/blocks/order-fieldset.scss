@@ -128,3 +128,124 @@
     outline: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .order-fieldset {
+    &--grey {
+      background-color: $grey-background;
+    }
+  }
+
+  .order-fieldset__container {
+    max-width: 772px;
+    padding: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+
+    &--contacts {
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-fieldset__title {
+    margin-top: 10px;
+
+    span {
+      background-color: transparent;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-fieldset__name-item {
+    flex-direction: row;
+
+    &:first-child {
+      padding: 0;
+    }
+  }
+
+  .order-fieldset__label {
+    padding-top: 20px;
+    padding-right: 25px;
+  }
+
+  .order-fieldset__list {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 30px;
+  }
+
+  .order-fieldset__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+
+  .order-fieldset__name-list {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    margin: 0;
+    width: 100%;
+    padding-left: 93px;
+  }
+
+  .order-fieldset__input {
+    flex-grow: 1;
+    background: transparent;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  .order-fieldset__checkbox-label {
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 63px;
+    padding-bottom: 20px;
+  }
+
+  .order-fieldset__color-item {
+    padding-top: 0;
+  }
+
+  .order-fieldset__contacts-label {
+    width: 80px;
+    padding-right: 78px;
+
+    span {
+      background: transparent;
+    }
+  }
+
+  .order-fieldset__contacts-item {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .order-fieldset__title--comment {
+    padding-right: 97px;
+  }
+
+  .order-fieldset__textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-fieldset__container {
+    max-width: 1150px;
+  }
+}
