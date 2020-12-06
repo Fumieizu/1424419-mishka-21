@@ -40,9 +40,9 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 30px;
-    padding: 54px 50px 36px;
+    padding: 66px 50px 16px 26px;
     box-sizing: border-box;
-    width: 772px;
+    width: 720px;
   }
 }
 
@@ -59,7 +59,9 @@
   }
 
   .page-content__description {
-    padding-top: 100px;
-    padding-left: 0;
+    width: 1030px;
+    padding-top: 98px;
+    padding-left: 164px;
+    padding-right: 164px;
   }
 }
