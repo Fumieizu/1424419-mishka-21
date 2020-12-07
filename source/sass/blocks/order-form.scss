@@ -18,3 +18,50 @@
   line-height: 16px;
   color: $second-black;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .order-form__button-wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .order-form__important-text {
+    order: 2;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .order-form__button {
+    order: 1;
+    width: 230px;
+    height: 52px;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__button-wrapper {
+    max-width: 800px;
+  }
+
+  .order-form__button {
+    margin: 0;
+  }
+}

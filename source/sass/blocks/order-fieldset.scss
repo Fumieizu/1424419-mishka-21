@@ -8,6 +8,13 @@
   margin: 0;
 }
 
+.order-fieldset__container {
+  &--comment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .order-fieldset__list {
   @include list-style-none;
   font-weight: 700;
@@ -54,7 +61,6 @@
 .order-fieldset__name-item {
   display: flex;
   flex-direction: column;
-  padding-top: 21px;
 }
 
 .order-fieldset__contacts-label {
@@ -126,5 +132,228 @@
   &:active {
     border-color: $mail-link;
     outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order-fieldset {
+    &--grey {
+      background-color: $grey-background;
+    }
+  }
+
+  .order-fieldset__container {
+    max-width: 768px;
+    padding: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+
+    &--type {
+      padding-bottom: 24px;
+    }
+
+    &--color {
+      min-height: 304px;
+      padding-bottom: 38px;
+    }
+
+    &--name {
+      min-height: 303px;
+      padding-bottom: 25px;
+    }
+
+    &--contacts {
+      min-height: 228px;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+
+    &--comment {
+      flex-direction: row;
+    }
+  }
+
+  .order-fieldset__title {
+    margin-top: 15px;
+
+    span {
+      background-color: transparent;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-fieldset__name-item {
+    flex-direction: row;
+    padding: 0;
+    padding-bottom: 24px;
+  }
+
+  .order-fieldset__item {
+    padding-left: 96px;
+    padding-bottom: 34px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .order-fieldset__label {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+  .order-fieldset__list {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 30px;
+  }
+
+  .order-fieldset__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+
+  .order-fieldset__name-list {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+    margin: 0;
+    width: 100%;
+    padding-left: 93px;
+  }
+
+  .order-fieldset__input {
+    flex-grow: 1;
+    background: transparent;
+    padding-left: 13px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  .order-fieldset__checkbox-label {
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 63px;
+    padding-bottom: 20px;
+    padding-right: 0;
+  }
+
+  .order-fieldset__color-item {
+    padding-top: 23px;
+    padding-bottom: 12px;
+    padding-left: 90px;
+
+    &:first-child {
+      padding-top: 13px;
+    }
+
+    &:nth-child(2) {
+      padding-top: 15px;
+    }
+
+    &:nth-child(2n) {
+      padding-left: 48px;
+    }
+  }
+
+  .order-fieldset__contacts-label {
+    width: 80px;
+    padding-right: 91px;
+    margin-top: 16px;
+
+    span {
+      background: transparent;
+    }
+  }
+
+  .order-fieldset__contacts-item {
+    flex-direction: row;
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .order-fieldset__title--comment {
+    padding-right: 106px;
+    margin-top: 19px;
+  }
+
+  .order-fieldset__textarea {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-fieldset__container {
+    max-width: 1030px;
+
+    &--color {
+      min-height: 228px;
+      padding-bottom: 29px;
+    }
+
+    &--comment {
+      padding-bottom: 48px;
+    }
+  }
+
+  .order-fieldset__item {
+    padding-left: 43px;
+  }
+
+  .order-fieldset__checkbox-labe {
+    padding: 0;
+    padding-top: 1px;
+  }
+
+  .order-fieldset__color-item {
+    &:nth-child(n) {
+      padding-top: 16px;
+      padding-bottom: 19px;
+      padding-left: 22px;
+      padding-right: 28px;
+    }
+  }
+
+  .order-fieldset__color-list {
+    padding-left: 45px;
+  }
+
+  .order-fieldset__name-list {
+    padding-left: 43px;
+  }
+
+  .order-fieldset__label {
+    padding-right: 29px;
+  }
+
+  .order-fieldset__contacts-label {
+    padding-right: 39px;
+  }
+
+  .order-fieldset__title {
+    &--comment {
+      padding-right: 54px;
+    }
+  }
+
+  .order-fieldset__textarea {
+    width: 700px;
   }
 }

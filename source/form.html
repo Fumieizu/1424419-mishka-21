@@ -9,11 +9,13 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
-          <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <a href="index.html" class="main-nav__logo">
+              <img src="https://via.placeholder.com/86x35" alt="Логотип магазина Мишка!" width="86" height="35">
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
@@ -23,10 +25,10 @@
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#">Поиск по сайту</a>
+            <li class="user-list__item user-list__search">
+              <a class="user-list__search-link" href="#"><img src="https://via.placeholder.com/18x18" width="18" height="18" alt="поиск"><span>Поиск по сайту</span></a>
             </li>
-            <li class="user-list__item">
+            <li class="user-list__item user-list__cart">
               <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -38,7 +40,9 @@
               <a href="#">Распродажа</a>
             </li>
           </ul>
-          <p class="main-nav__text">Бесплатная доставка по России</p>
+          <div class="main-nav__delivery">
+            <p class="main-nav__text">Бесплатная доставка по России</p>
+          </div>
         </nav>
       </div>
     </header>
@@ -50,7 +54,7 @@
         <p class="page-content__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="order-form__fieldset order-fieldset">
-            <div class="order-fieldset__container">
+            <div class="order-fieldset__container order-fieldset__container--type">
               <h3 class="order-fieldset__title">
                 <span>ТИП</span>
               </h3>
@@ -67,7 +71,7 @@
             </div>
           </div>
           <div class="order-form__fieldset order-fieldset order-fieldset--grey">
-            <div class="order-fieldset__container">
+            <div class="order-fieldset__container order-fieldset__container--color">
               <h3 class="order-fieldset__title">
                 <span>ЦВЕТ</span>
               </h3>
@@ -100,7 +104,7 @@
             </div>
           </div>
           <div class="order-form__fieldset order-fieldset">
-            <div class="order-fieldset__container">
+            <div class="order-fieldset__container order-fieldset__container--name">
               <h3 class="order-fieldset__title">
                 <span>ФИО</span>
               </h3>
@@ -121,7 +125,7 @@
             </div>
           </div>
           <div class="order-form__fieldset order-fieldset order-fieldset--grey">
-            <div class="order-fieldset__container">
+            <div class="order-fieldset__container order-fieldset__container--contacts">
               <div class="order-fieldset__contacts-item">
                 <label class="order-fieldset__contacts-label" for="phone-number"><span>ТЕЛ</span></label>
                 <input class="order-fieldset__input" id="phone-number" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -133,11 +137,10 @@
             </div>
           </div>
           <div class="order-form__fieldset order-fieldset">
-            <div class="order-fieldset__container">
-              <h3 class="order-fieldset__title order-fieldset__title--comment">
+            <div class="order-fieldset__container order-fieldset__container--comment">
+              <label class="order-fieldset__title order-fieldset__title--comment" for="comment" aria-label="пожелания к заказу">
                 <span>ДОП</span>
-              </h3>
-              <label class="visually-hidden" for="comment">пожелания к заказу</label>
+              </label >
               <textarea class="order-fieldset__textarea" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
@@ -149,22 +152,24 @@
       </div>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/102x35" alt="Логотип">
-      </a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">ins</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">fb</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">tw</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="HTML academy"></a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img src="https://via.placeholder.com/102x35" alt="Логотип">
+        </a>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">ins</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">fb</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">tw</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="HTML academy"></a>
+        </div>
       </div>
     </footer>
   </body>

@@ -5,28 +5,21 @@
 @media (min-width: $desktop-width) {
   .news-list {
     display: flex;
-    flex-wrap: wrap;
-    width: 36%;
+    background-color: $promo-background;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    width: 50%;
+    max-height: 0;
+    order: 4;
   }
 
   .news-list__item {
-    &:first-child {
-      border-right: 1px solid $light-grey;
-
-      a {
-        padding-left: 0;
-        padding-right: 35px;
-      }
-    }
-
     a {
-      display: block;
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 24px;
-      padding-top: 33px;
-      padding-bottom: 32px;
-      padding-left: 35px;
+      display: flex;
+      padding: 0;
+      padding-top: 19px;
+      width: 219px;
     }
   }
 }
