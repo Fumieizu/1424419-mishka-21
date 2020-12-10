@@ -1,6 +1,6 @@
 .production {
   border: 1px solid $light-grey;
-  width: 260px;
+  max-width: 260px;
   margin: 0 auto 60px;
 }
 
@@ -23,6 +23,16 @@
   margin: 35px auto 41px;
 }
 
+.production__container {
+  position: relative;
+}
+
+.production__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .production__button {
   display: block;
   font-weight: 700;
@@ -31,4 +41,101 @@
   width: 192px;
   margin: 0 auto;
   margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    max-width: 768px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .production__container {
+    min-height: 455px;
+    background-color: $green;
+    order: -1;
+  }
+
+  .production__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    width: 668px;
+    padding-top: 41px;
+    padding-left: 107px;
+    box-sizing: border-box;
+    border: 1px solid $light-grey;
+    border-bottom: none;
+  }
+
+  .production__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    width: 590px;
+    padding-left: 40px;
+  }
+
+  .production__button {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    padding-top: 17px;
+    margin: 40px 0 46px 41px;
+    height: 52px;
+    width: 584px;
+  }
+
+  .production__wrapper {
+    border: 1px solid $light-grey;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    max-width: 1150px;
+    position: relative;
+    align-items: flex-end;
+    margin-bottom: 103px;
+    margin-top: 53px;
+  }
+
+  .production__container {
+    position: absolute;
+    width: 682px;
+    height: 455px;
+    left: 50px;
+    bottom: 0;
+  }
+
+  .production__wrapper {
+    width: 365px;
+    min-height: 300px;
+    margin: 0;
+    padding: 15px 56px 30px 76px;
+    box-sizing: border-box;
+  }
+
+  .production__title {
+    width: 365px;
+    min-height: 155px;
+    padding: 94px 55px 7px 75px;
+  }
+
+  .production__text {
+    width: 252px;
+    padding: 0;
+  }
+
+  .production__button {
+    width: 230px;
+    margin: 0;
+    margin-top: 50px;
+  }
 }

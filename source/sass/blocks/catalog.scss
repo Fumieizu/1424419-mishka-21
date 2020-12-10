@@ -1,8 +1,28 @@
 .catalog {
   @include central;
+  margin-top: 30px;
 }
 
 .catalog__list {
   @include list-style-none;
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    max-width: 768px;
+    padding: 0 50px;
+    margin-top: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    max-width: 1150px;
+    margin-top: 112px;
+  }
+
+  .catalog__list {
+    display: flex;
+  }
 }

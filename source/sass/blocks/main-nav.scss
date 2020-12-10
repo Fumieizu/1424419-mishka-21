@@ -27,14 +27,13 @@
 
   .main-nav__wrapper {
     display: flex;
-    width: 47%;
+    width: 48%;
     align-items: center;
     order: 1;
   }
 
   .main-nav__list {
     display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
   }
 
@@ -45,7 +44,7 @@
   .main-nav__delivery {
     order: 4;
     box-sizing: border-box;
-    width: 50%;
+    width: 45%;
     text-align: right;
     max-height: 0;
   }
