@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .user-list {
     order: 2;
-    width: 53%;
+    width: 52%;
   }
 
   .user-list__search-link {
@@ -44,7 +44,7 @@
 
   .user-list__item {
     a {
-      width: 84px;
+      width: 81px;
       padding-top: 33px;
       padding-bottom: 32px;
       padding-left: 0;
@@ -55,9 +55,9 @@
     box-shadow: none;
 
     a {
-      width: 252px;
+      width: 265px;
       margin: 0;
-      padding-left: 50px;
+      padding-left: 83px;
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
@@ -67,7 +67,7 @@
   }
 
   .user-list__search {
-    width: 85px;
+    width: 81px;
     border: 1px solid $light-grey;
     border-top: none;
     border-bottom: none;
