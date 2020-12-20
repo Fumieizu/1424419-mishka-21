@@ -101,9 +101,9 @@
   .production {
     max-width: 1150px;
     position: relative;
-    align-items: flex-end;
     margin-bottom: 103px;
     margin-top: 53px;
+    padding-left: 732px;
   }
 
   .production__container {
@@ -111,21 +111,20 @@
     width: 682px;
     height: 455px;
     left: 50px;
-    bottom: 0;
   }
 
   .production__wrapper {
-    width: 365px;
+    width: auto;
     min-height: 300px;
     margin: 0;
-    padding: 15px 56px 30px 76px;
+    padding: 16px 56px 30px 79px;
     box-sizing: border-box;
   }
 
   .production__title {
-    width: 365px;
+    width: auto;
     min-height: 155px;
-    padding: 94px 55px 7px 75px;
+    padding: 95px 55px 7px 79px;
   }
 
   .production__text {

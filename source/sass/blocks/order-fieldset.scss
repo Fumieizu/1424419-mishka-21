@@ -217,7 +217,8 @@
   }
 
   .order-fieldset__color-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     font-weight: 700;
     font-size: 19px;
@@ -332,6 +333,7 @@
   }
 
   .order-fieldset__color-list {
+    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 45px;
   }
 

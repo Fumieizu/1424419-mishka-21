@@ -1,6 +1,6 @@
 .about-us {
   @include central;
-  margin-top: 79px;
+  margin-top: 75px;
 }
 
 .about-us__title {
@@ -18,13 +18,98 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 82px;
+  padding-top: 83px;
   width: 249px;
+  position: relative;
+
+  &--eco {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 38px;
+      background: url("../img/eco.svg");
+      background-repeat: no-repeat;
+      background-size: 33px 38px;
+      top: 27px;
+      left: 8px;
+    }
+  }
+
+  &--money {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 27px;
+      background: url("../img/money.svg");
+      background-repeat: no-repeat;
+      background-size: 47px 27px;
+      top: 28px;
+      left: 0;
+    }
+  }
+
+  &--like {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 27px;
+      background: url("../img/like.svg");
+      background-repeat: no-repeat;
+      background-size: 34px 27px;
+      top: 33px;
+      left: 7px;
+    }
+  }
+
+  &--hand {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 34px;
+      background: url("../img/hand.svg");
+      background-repeat: no-repeat;
+      background-size: 35px 35px;
+      top: 30px;
+      left: 3px;
+    }
+  }
+
+  &--support {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 23px;
+      background: url("../img/support.svg");
+      background-repeat: no-repeat;
+      background-size: 55px 23px;
+      top: 31px;
+      left: -6px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 32px;
+      background: url("../img/gift.svg");
+      background-repeat: no-repeat;
+      background-size: 33px 32px;
+      top: 29px;
+      left: 3px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    max-width: 768px;
+    max-width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
     margin-top: 124px;
@@ -39,21 +124,64 @@
 
   .about-us__list {
     column-count: 2;
+    max-width: 98%;
   }
 
   .about-us__item {
-    padding-top: 56px;
-    margin-bottom: 57px;
+    padding-top: 58px;
+    margin-bottom: 53px;
     width: 293px;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      &::before {
+        top: 0;
+      }
+    }
+
+    &--money {
+      &::before {
+        top: 3px;
+        left: 1px;
+      }
+    }
+
+    &--like {
+      &::before {
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    &--hand {
+      &::before {
+        top: 5px;
+        left: 2px;
+      }
+    }
+
+    &--support {
+      &::before {
+        top: 6px;
+        left: -7px;
+      }
+    }
+
+    &--gift {
+      &::before {
+        top: 4px;
+        left: 2px;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
     max-width: 1150px;
+    margin-top: 164px;
   }
 
   .about-us__title {
@@ -61,9 +189,11 @@
     font-size: 53px;
     line-height: 57px;
     margin-left: 175px;
+    margin-bottom: 38px;
   }
 
   .about-us__list {
     margin-left: 175px;
+    max-width: 65%;
   }
 }

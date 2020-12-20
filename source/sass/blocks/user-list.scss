@@ -13,11 +13,12 @@
     align-self: center;
     width: 320px;
     margin: 0 auto;
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding-top: 29px;
+    padding-bottom: 26px;
     padding-left: 76px;
     padding-right: 20px;
     box-sizing: border-box;
+    position: relative;
 
     &:hover,
     &:focus {
@@ -30,10 +31,36 @@
   }
 }
 
+.user-list__search-link,
+.user-list__cart-link {
+  &:hover .user-list__icon {
+    path {
+      fill: $green;
+      opacity: 1;
+    }
+  }
+
+  &:active .user-list__icon {
+    path {
+      opacity: 0.3;
+    }
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     order: 2;
     width: 52%;
+  }
+
+  .user-list__icon {
+    top: 36px;
   }
 
   .user-list__search-link {
@@ -71,6 +98,7 @@
     border: 1px solid $light-grey;
     border-top: none;
     border-bottom: none;
+    margin-left: auto;
   }
 }
 

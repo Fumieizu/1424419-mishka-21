@@ -6,7 +6,7 @@
 .product-type__link {
   position: relative;
   display: block;
-  padding: 27px 0 30px 0;
+  padding: 25px 0 30px 0;
   color: $basic-white;
   font-weight: 700;
   font-size: 19px;
@@ -14,21 +14,64 @@
 
   &--interior {
     background-color: $green;
+
+    &:hover {
+      background-color: $light-green;
+    }
+
+    ::after {
+      content: "";
+      position: absolute;
+      width: 41px;
+      height: 62px;
+      background: url("../img/interior.svg");
+      background-repeat: no-repeat;
+      background-size: 41px 62px;
+      z-index: 2;
+      top: 23px;
+      right: 35px;
+    }
   }
 
   &--toys {
     background-color: $dark-green;
+
+    &:hover {
+      background-color: $mail-hover;
+    }
+
+    ::after {
+      content: "";
+      position: absolute;
+      width: 61px;
+      height: 61px;
+      background: url("../img/toy.svg");
+      background-repeat: no-repeat;
+      background-size: 61px 61px;
+      z-index: 2;
+      top: 21px;
+      right: 26px;
+    }
   }
 
   &:hover,
   &:focus {
     margin-top: -5px;
     padding-bottom: 35px;
+
+    ::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    ::after {
+      opacity: 0.3;
+    }
   }
 
   span {
     display: block;
-    width: 320px;
     padding: 0 30px 0 30px;
     white-space: pre-line;
     margin: 0 auto;
@@ -43,6 +86,31 @@
     flex-direction: row;
     width: auto;
     margin: 0;
+  }
+
+  .product-type__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 35px;
+
+    span {
+      padding-left: 36px;
+    }
+
+    &--interior {
+      ::after {
+        top: 29px;
+        right: 36px;
+      }
+    }
+
+    &--toys {
+      ::after {
+        top: 30px;
+        right: 33px;
+      }
+    }
   }
 
   .product-type__item {
