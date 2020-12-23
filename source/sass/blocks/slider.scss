@@ -1,0 +1,22 @@
+.slider__button {
+  background: transparent;
+  height: 52px;
+  width: 50%;
+  border: 1px solid $light-grey;
+  border-collapse: collapse;
+  cursor: pointer;
+
+  &:hover path {
+    opacity: 0.6;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__button {
+    border: none;
+  }
+}

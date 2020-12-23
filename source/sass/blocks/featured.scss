@@ -9,6 +9,7 @@
   line-height: 30px;
   margin: 0;
   color: $basic-black;
+  margin-bottom: 4px;
 }
 
 .featured__week-top {
@@ -21,16 +22,15 @@
 }
 
 .featured__text {
-  width: 250px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: $second-black;
-  margin: 18px 0 28px;
+  margin: 18px 0 18px;
 }
 
 .featured__list {
-  width: 260px;
+  width: 100%;
   margin-bottom: 28px;
   font-weight: 400;
   font-size: 15px;
@@ -48,20 +48,36 @@
   padding-bottom: 10px;
 }
 
+.featured__field {
+  padding: 7px 12px 11px 0;
+}
+
+.featured__img-wrapper {
+  align-self: center;
+  text-align: center;
+}
+
 .featured__price {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $second-black;
   text-align: center;
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+
+.featured__button {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .featured {
     display: flex;
     flex-direction: column;
-    max-width: 768px;
+    max-width: 1150px;
     padding: 0 50px;
+    margin-top: 52px;
   }
 
   .featured__title {
@@ -76,42 +92,59 @@
     line-height: 17px;
     width: 100px;
     margin: 0;
-    margin-left: auto;
+    margin-right: 14px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .featured__title-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .featured__spec-container {
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: auto;
+    min-height: 281px;
   }
 
   .featured__text {
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
-    width: 292px;
+    max-width: 292px;
     margin-top: 0;
+  }
+
+  .featured__list {
+    margin-top: 20px;
+  }
+
+  .featured__field {
+    padding-right: 0;
+    width: 93px;
+  }
+
+  .featured__value {
+    padding-top: 0;
   }
 
   .featured__container {
     display: flex;
     flex-direction: column;
-    margin-top: 37px;
+    margin-top: 33px;
     position: relative;
     padding-right: 50%;
+    width: 50%;
   }
 
   .featured__img-wrapper {
     position: absolute;
     z-index: -1;
     right: 0;
+    bottom: 0;
     display: flex;
     margin-left: auto;
     width: 334px;
@@ -120,19 +153,30 @@
   }
 
   .featured__price-wrapper {
-    width: 290px;
-    margin-top: 27px;
+    width: 87%;
+    margin-top: 10px;
+  }
+
+  .featured__price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
   }
 
   .featured__button {
-    width: 292px;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .featured {
-    margin-top: 132px;
+    margin-top: 129px;
     max-width: 1150px;
+  }
+
+  .featured__title-wrapper {
+    justify-content: start;
   }
 
   .featured__title {
@@ -147,24 +191,40 @@
     margin: 0;
     margin-right: 43px;
     margin-left: 31px;
+    padding-top: 9px;
   }
 
   .featured__container {
     margin-left: 175px;
+    width: 33%;
+  }
+
+  .featured__list {
+    width: 82%;
+  }
+
+  .featured__field {
+    padding-bottom: 12px;
+  }
+
+  .featured__value {
+    padding-top: 8px;
   }
 
   .featured__img-wrapper {
     background-color: $green;
     width: 525px;
     height: 636px;
+    right: -2px;
     bottom: 0;
   }
 
   .featured__text {
-    margin-bottom: 60px;
+    margin-bottom: 29px;
   }
 
   .featured__price-wrapper {
-    margin-top: 63px;
+    margin-top: 65px;
+    width: 84%;
   }
 }
