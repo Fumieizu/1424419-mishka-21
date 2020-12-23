@@ -49,7 +49,7 @@
 }
 
 .featured__field {
-  padding: 7px 12px 12px 0;
+  padding: 7px 12px 11px 0;
 }
 
 .featured__img-wrapper {
@@ -114,7 +114,7 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
-    width: 89%;
+    max-width: 292px;
     margin-top: 0;
   }
 
@@ -124,6 +124,11 @@
 
   .featured__field {
     padding-right: 0;
+    width: 93px;
+  }
+
+  .featured__value {
+    padding-top: 0;
   }
 
   .featured__container {
@@ -166,7 +171,7 @@
 
 @media (min-width: $desktop-width) {
   .featured {
-    margin-top: 112px;
+    margin-top: 129px;
     max-width: 1150px;
   }
 
@@ -198,6 +203,14 @@
     width: 82%;
   }
 
+  .featured__field {
+    padding-bottom: 12px;
+  }
+
+  .featured__value {
+    padding-top: 8px;
+  }
+
   .featured__img-wrapper {
     background-color: $green;
     width: 525px;
@@ -208,7 +221,6 @@
 
   .featured__text {
     margin-bottom: 29px;
-    width: 86%;
   }
 
   .featured__price-wrapper {

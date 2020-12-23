@@ -22,14 +22,17 @@
   width: 249px;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
   &--eco {
     &::before {
-      content: "";
-      position: absolute;
       width: 33px;
       height: 38px;
       background: url("../img/eco.svg");
-      background-repeat: no-repeat;
       background-size: 33px 38px;
       top: 27px;
       left: 8px;
@@ -38,12 +41,9 @@
 
   &--money {
     &::before {
-      content: "";
-      position: absolute;
       width: 47px;
       height: 27px;
       background: url("../img/money.svg");
-      background-repeat: no-repeat;
       background-size: 47px 27px;
       top: 28px;
       left: 0;
@@ -52,12 +52,9 @@
 
   &--like {
     &::before {
-      content: "";
-      position: absolute;
       width: 34px;
       height: 27px;
       background: url("../img/like.svg");
-      background-repeat: no-repeat;
       background-size: 34px 27px;
       top: 33px;
       left: 7px;
@@ -66,12 +63,9 @@
 
   &--hand {
     &::before {
-      content: "";
-      position: absolute;
       width: 35px;
       height: 34px;
       background: url("../img/hand.svg");
-      background-repeat: no-repeat;
       background-size: 35px 35px;
       top: 30px;
       left: 3px;
@@ -80,12 +74,9 @@
 
   &--support {
     &::before {
-      content: "";
-      position: absolute;
       width: 55px;
       height: 23px;
       background: url("../img/support.svg");
-      background-repeat: no-repeat;
       background-size: 55px 23px;
       top: 31px;
       left: -6px;
@@ -94,12 +85,9 @@
 
   &--gift {
     &::before {
-      content: "";
-      position: absolute;
       width: 33px;
       height: 32px;
       background: url("../img/gift.svg");
-      background-repeat: no-repeat;
       background-size: 33px 32px;
       top: 29px;
       left: 3px;
