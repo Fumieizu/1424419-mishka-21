@@ -21,11 +21,13 @@
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 31px;
+  padding-top: 23px;
 }
 
 .order-fieldset__item {
   min-height: 42px;
   display: flex;
+  padding-bottom: 1px;
 }
 
 .order-fieldset__color-list {
@@ -34,19 +36,92 @@
   font-size: 17px;
   line-height: 18px;
   margin-bottom: 33px;
+  padding-top: 25px;
 }
 
 .order-fieldset__radio-label {
-  padding: 12px 30px 10px 63px;
+  padding: 12px 30px 10px 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.order-fieldset__radio {
+  & + label::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 2px solid $second-black;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  & + label:hover::before {
+    border-color: $mail-link;
+  }
+
+  & + label:active::before {
+    border-color: $checkbox-active;
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48%;
+    left: 12px;
+    transform: translateY(-50%);
+    background-color: $mail-link;
+    border-radius: 50%;
+  }
+}
+
+.order-fieldset__checkbox {
+  & + label::before {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: -1px;
+    left: 0;
+    border: 2px solid $second-black;
+    box-sizing: border-box;
+  }
+
+  & + label:hover::before {
+    border-color: $mail-link;
+  }
+
+  & + label:active::before {
+    border-color: $checkbox-active;
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    top: 10px;
+    left: 7px;
+    background: url("../img/Tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .order-fieldset__color-item {
   min-height: 38px;
   display: flex;
+  margin-bottom: 23px;
 }
 
 .order-fieldset__checkbox-label {
-  padding: 10px 30px 10px 63px;
+  padding: 10px 30px 10px 61px;
+  position: relative;
 }
 
 .order-fieldset__name-list {
@@ -54,13 +129,17 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  margin-top: 8px;
-  margin-bottom: 35px;
+  padding-top: 28px;
 }
 
 .order-fieldset__name-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .order-fieldset__contacts-label {
@@ -70,13 +149,31 @@
   font-size: 17px;
   line-height: 16px;
   color: $green;
-  margin-bottom: 5px;
-  margin-top: 22px;
+  margin-top: 35px;
+  margin-bottom: 3px;
 }
 
 .order-fieldset__contacts-item {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.order-fieldset__icon {
+  fill: $checkbox-active;
+  fill-opacity: 0.2;
+}
+
+.order-fieldset__icon--phone {
+  position: absolute;
+  bottom: 17px;
+  right: 7px;
+}
+
+.order-fieldset__icon--mail {
+  position: absolute;
+  bottom: 14px;
+  right: 3px;
 }
 
 .order-fieldset__title--comment {
@@ -107,6 +204,11 @@
   &:focus,
   &:active {
     border-color: $mail-link;
+
+    & + .order-fieldset__icon {
+      fill: #62d1ba;
+      fill-opacity: 1;
+    }
   }
 }
 
@@ -117,7 +219,6 @@
   line-height: 18px;
   padding: 17px 17px 0 17px;
   border: 2px solid $basic-black;
-  width: 260px;
   height: 142px;
   resize: vertical;
   color: $second-black;
@@ -125,6 +226,9 @@
 
   &::placeholder {
     opacity: 0.3;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   &:hover,
@@ -143,7 +247,7 @@
   }
 
   .order-fieldset__container {
-    max-width: 768px;
+    max-width: 1150px;
     padding: 50px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -155,7 +259,7 @@
 
     &--color {
       min-height: 304px;
-      padding-bottom: 38px;
+      padding-bottom: 26px;
     }
 
     &--name {
@@ -191,6 +295,7 @@
     flex-direction: row;
     padding: 0;
     padding-bottom: 24px;
+    margin-bottom: 0;
   }
 
   .order-fieldset__item {
@@ -209,11 +314,27 @@
     padding-bottom: 10px;
   }
 
+  .order-fieldset__radio {
+    & + label::before {
+      width: 50px;
+      height: 49px;
+      left: -17px;
+    }
+
+    &:checked + label::after {
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: -2px;
+    }
+  }
+
   .order-fieldset__list {
     font-weight: 700;
     font-size: 19px;
     line-height: 18px;
-    padding-left: 30px;
+    padding-left: 32px;
+    padding-top: 0;
   }
 
   .order-fieldset__color-list {
@@ -225,6 +346,8 @@
     line-height: 18px;
     margin-bottom: 0;
     padding-left: 30px;
+    padding-top: 0;
+    width: 81%;
   }
 
   .order-fieldset__name-list {
@@ -234,6 +357,7 @@
     margin: 0;
     width: 100%;
     padding-left: 93px;
+    padding-top: 0;
   }
 
   .order-fieldset__input {
@@ -256,9 +380,28 @@
     padding-right: 0;
   }
 
+  .order-fieldset__checkbox {
+    & + label::before {
+      width: 52px;
+      height: 52px;
+      top: -14px;
+      left: -18px;
+    }
+
+    &:checked + label::after {
+      width: 33px;
+      height: 24px;
+      top: 2px;
+      left: -7px;
+      background: url("../img/big-Tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   .order-fieldset__color-item {
-    padding-top: 23px;
-    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-bottom: 0;
     padding-left: 90px;
 
     &:first-child {
@@ -282,6 +425,16 @@
     span {
       background: transparent;
     }
+  }
+
+  .order-fieldset__icon--phone {
+    bottom: 16px;
+    right: 26px;
+  }
+
+  .order-fieldset__icon--mail {
+    bottom: 15px;
+    right: 22px;
   }
 
   .order-fieldset__contacts-item {
@@ -318,9 +471,19 @@
     padding-left: 43px;
   }
 
-  .order-fieldset__checkbox-labe {
-    padding: 0;
-    padding-top: 1px;
+  .order-fieldset__checkbox-label {
+    width: 150px;
+  }
+
+  .order-fieldset__checkbox {
+    & + label::before {
+      top: -18px;
+    }
+
+    &:checked + label::after {
+      top: -4px;
+      left: -8px;
+    }
   }
 
   .order-fieldset__color-item {
@@ -329,6 +492,7 @@
       padding-bottom: 19px;
       padding-left: 22px;
       padding-right: 28px;
+      margin-bottom: 0;
     }
   }
 
@@ -357,5 +521,6 @@
 
   .order-fieldset__textarea {
     width: 700px;
+    padding-top: 14px;
   }
 }
