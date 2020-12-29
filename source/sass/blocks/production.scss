@@ -1,36 +1,69 @@
 .production {
   border: 1px solid $light-grey;
-  max-width: 260px;
-  margin: 0 auto 60px;
+  max-width: 767px;
+  margin: 0 30px 58px;
 }
 
 .production__title {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 26px;
   padding-left: 90px;
-  width: 156px;
+  min-height: 95px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 34px;
+    left: 33px;
+    background: url("../img/video.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 22px;
+  }
 }
 
 .production__text {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  width: 197px;
+  width: 193px;
   margin: 35px auto 41px;
 }
 
 .production__container {
   position: relative;
+  min-height: 150px;
+  background-color: $grey-background;
 }
 
 .production__video-button {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 101px;
+  height: 77px;
+  background-color: transparent;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: none;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+
+  &:active {
+    transform: scale(0.8) translate(-60%, -60%);
+    opacity: 0.3;
+  }
 }
 
 .production__button {
@@ -41,16 +74,18 @@
   width: 192px;
   margin: 0 auto;
   margin-bottom: 33px;
+  height: 52px;
 }
 
 @media (min-width: $tablet-width) {
   .production {
-    max-width: 768px;
+    max-width: 1150px;
     padding: 0 50px;
     display: flex;
     flex-direction: column;
     border: none;
     box-sizing: border-box;
+    margin: 0 auto 63px;
   }
 
   .production__container {
@@ -64,12 +99,19 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0;
-    width: 668px;
+    width: auto;
     padding-top: 41px;
     padding-left: 107px;
     box-sizing: border-box;
     border: 1px solid $light-grey;
     border-bottom: none;
+    min-height: 0;
+    padding-bottom: 23px;
+
+    &::before {
+      top: 37px;
+      left: 41px;
+    }
   }
 
   .production__text {
@@ -101,7 +143,7 @@
   .production {
     max-width: 1150px;
     position: relative;
-    margin-bottom: 103px;
+    margin-bottom: 106px;
     margin-top: 53px;
     padding-left: 732px;
   }
@@ -125,6 +167,11 @@
     width: auto;
     min-height: 155px;
     padding: 95px 55px 7px 79px;
+
+    &::before {
+      top: 45px;
+      left: 79px;
+    }
   }
 
   .production__text {

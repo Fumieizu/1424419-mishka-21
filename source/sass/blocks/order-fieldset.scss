@@ -107,7 +107,7 @@
     height: 17px;
     top: 10px;
     left: 7px;
-    background: url("../img/Tick.svg");
+    background: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -160,7 +160,7 @@
 }
 
 .order-fieldset__icon {
-  fill: $checkbox-active;
+  fill: $basic-black;
   fill-opacity: 0.2;
 }
 
@@ -227,7 +227,7 @@
   &::placeholder {
     opacity: 0.3;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 18px;
   }
 
@@ -393,7 +393,7 @@
       height: 24px;
       top: 2px;
       left: -7px;
-      background: url("../img/big-Tick.svg");
+      background: url("../img/big-checkbox-on.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -450,6 +450,12 @@
 
   .order-fieldset__textarea {
     width: 100%;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
 
@@ -503,10 +509,25 @@
 
   .order-fieldset__name-list {
     padding-left: 43px;
+    padding-right: 115px;
   }
 
   .order-fieldset__label {
     padding-right: 29px;
+  }
+
+  .order-fieldset__contacts-item {
+    padding-right: 115px;
+  }
+
+  .order-fieldset__icon--phone {
+    bottom: 18px;
+    right: 123px;
+  }
+
+  .order-fieldset__icon--mail {
+    bottom: 17px;
+    right: 119px;
   }
 
   .order-fieldset__contacts-label {
@@ -522,5 +543,11 @@
   .order-fieldset__textarea {
     width: 700px;
     padding-top: 14px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
