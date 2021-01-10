@@ -4,6 +4,11 @@
   margin: 0 30px 58px;
 }
 
+.production__img {
+  display: block;
+  width: 100%;
+}
+
 .production__title {
   position: relative;
   font-weight: 700;
@@ -146,6 +151,10 @@
     margin-bottom: 106px;
     margin-top: 53px;
     padding-left: 732px;
+  }
+
+  .production__img {
+    min-height: 455px;
   }
 
   .production__container {

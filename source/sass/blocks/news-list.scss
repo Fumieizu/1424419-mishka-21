@@ -21,6 +21,15 @@
       padding: 0;
       padding-top: 19px;
       width: 219px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

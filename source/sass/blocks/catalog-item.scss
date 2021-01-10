@@ -63,9 +63,12 @@
 }
 
 .catalog-item__link {
-  min-height: 195px;
   background-color: $green;
-  display: flex;
+}
+
+.catalog-item__img {
+  width: 100%;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,6 +93,10 @@
   .catalog-item__link {
     width: 50%;
     background-color: $green;
+  }
+
+  .catalog-item__img {
+    min-height: 334px;
   }
 
   .catalog-item__footer {

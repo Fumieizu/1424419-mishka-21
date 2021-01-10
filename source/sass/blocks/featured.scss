@@ -1,6 +1,20 @@
 .featured {
   @include central;
   margin-top: 31px;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    bottom: -47px;
+    left: 0;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-size: auto 7px;
+  }
 }
 
 .featured__title {
@@ -64,7 +78,7 @@
   color: $second-black;
   text-align: center;
   margin-top: 17px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .featured__button {
@@ -73,11 +87,18 @@
 
 @media (min-width: $tablet-width) {
   .featured {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 1150px;
     padding: 0 50px;
     margin-top: 52px;
+
+    &::after {
+      bottom: -69px;
+      height: 19px;
+      background-size: auto 17px;
+    }
   }
 
   .featured__title {
@@ -173,6 +194,12 @@
   .featured {
     margin-top: 129px;
     max-width: 1150px;
+
+    &::after {
+      bottom: -109px;
+      height: 36px;
+      background-size: auto 23px;
+    }
   }
 
   .featured__title-wrapper {
