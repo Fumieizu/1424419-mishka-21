@@ -94,7 +94,6 @@
   }
 
   .production__container {
-    min-height: 455px;
     background-color: $green;
     order: -1;
   }
@@ -123,9 +122,8 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
-    margin: 0;
+    margin: 0 auto;
     width: 590px;
-    padding-left: 40px;
   }
 
   .production__button {
@@ -133,9 +131,9 @@
     font-size: 17px;
     line-height: 16px;
     padding-top: 17px;
-    margin: 40px 0 46px 41px;
+    margin: 40px auto 46px;
     height: 52px;
-    width: 584px;
+    width: 87.5%;
   }
 
   .production__wrapper {
