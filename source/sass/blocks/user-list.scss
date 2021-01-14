@@ -33,17 +33,13 @@
 
 .user-list__search-link,
 .user-list__cart-link {
-  &:hover .user-list__icon {
-    path {
-      fill: $green;
-      opacity: 1;
-    }
+  &:hover path {
+    fill: $green;
+    opacity: 1;
   }
 
-  &:active .user-list__icon {
-    path {
-      opacity: 0.3;
-    }
+  &:active path {
+    opacity: 0.3;
   }
 }
 
@@ -104,7 +100,7 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 36%;
+    width: 37%;
     order: 3;
   }
 }

@@ -6,6 +6,16 @@
   align-items: center;
 }
 
+.social-list__link {
+  &:hover path {
+    fill: $mail-hover;
+  }
+
+  &:active path {
+    fill-opacity: 0.3;
+  }
+}
+
 .social-list__item {
   margin-left: 41px;
 }

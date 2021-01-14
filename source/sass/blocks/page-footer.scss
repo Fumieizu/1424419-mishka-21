@@ -5,6 +5,15 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover path {
+    fill: $mail-hover;
+  }
+
+  &:active path {
+    fill: $mail-hover;
+    fill-opacity: 0.3;
+  }
 }
 
 .page-footer__wrapper {
@@ -29,6 +38,15 @@
   svg {
     margin-right: 39px;
     margin-top: 8px;
+  }
+
+  &:hover path {
+    fill: $mail-hover;
+  }
+
+  &:active path {
+    fill: $mail-hover;
+    fill-opacity: 0.3;
   }
 }
 

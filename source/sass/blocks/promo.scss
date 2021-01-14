@@ -4,6 +4,11 @@
   background-size: auto;
   background-position: 50% -15%;
   background-color: $promo-background;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 320px 373px;
+  }
 }
 
 .promo__title {
@@ -26,7 +31,12 @@
     background-position: 50% -2px;
     min-height: 745px;
 
-    /*&::after {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 768px 746px;
+    }
+
+    &::after {
       display: block;
       content: "";
       position: absolute;
@@ -35,8 +45,8 @@
       bottom: 0;
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: repeat-x;
-      background-size: auto 23px;
-    }*/
+      background-size: auto 22.8px;
+    }
   }
 
   .promo__title {
@@ -57,6 +67,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    &::after {
+      bottom: -14px;
+      height: 34px;
+      background-size: auto 35px;
+    }
+  }
+
   .promo__title {
     width: 700px;
     font-weight: 700;
