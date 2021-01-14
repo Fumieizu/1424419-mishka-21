@@ -6,11 +6,11 @@
 .page-footer__logo {
   display: none;
 
-  &:hover path {
+  &:hover svg {
     fill: $mail-hover;
   }
 
-  &:active path {
+  &:active svg {
     fill: $mail-hover;
     fill-opacity: 0.3;
   }
@@ -36,15 +36,16 @@
   align-items: center;
 
   svg {
+    fill: $green;
     margin-right: 39px;
     margin-top: 8px;
   }
 
-  &:hover path {
+  &:hover svg {
     fill: $mail-hover;
   }
 
-  &:active path {
+  &:active svg {
     fill: $mail-hover;
     fill-opacity: 0.3;
   }

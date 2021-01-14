@@ -33,12 +33,12 @@
 
 .user-list__search-link,
 .user-list__cart-link {
-  &:hover path {
-    fill: $green;
+  &:hover .user-list__icon {
     opacity: 1;
+    fill: $green;
   }
 
-  &:active path {
+  &:active .user-list__icon {
     opacity: 0.3;
   }
 }
