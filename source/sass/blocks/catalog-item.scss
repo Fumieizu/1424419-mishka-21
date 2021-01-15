@@ -31,16 +31,12 @@
   top: 20px;
 
   &:hover {
-    path {
-      fill: $green;
-      opacity: 1;
-    }
+    fill: $green;
+    opacity: 1;
   }
 
   &:active {
-    path {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 

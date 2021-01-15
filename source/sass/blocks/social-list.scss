@@ -7,11 +7,11 @@
 }
 
 .social-list__link {
-  &:hover path {
+  &:hover svg {
     fill: $mail-hover;
   }
 
-  &:active path {
+  &:active svg {
     fill-opacity: 0.3;
   }
 }

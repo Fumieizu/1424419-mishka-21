@@ -6,11 +6,11 @@
   border-collapse: collapse;
   cursor: pointer;
 
-  &:hover path {
+  &:hover svg {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
   }
 }
