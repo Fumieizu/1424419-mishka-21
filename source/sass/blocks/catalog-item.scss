@@ -29,15 +29,19 @@
   position: absolute;
   right: -1px;
   top: 20px;
+  opacity: 0.2;
+}
 
-  &:hover {
+.catalog-item__cart {
+  &:hover .catalog-item__icon {
     fill: $green;
     opacity: 1;
   }
 
-  &:active {
+  &:active .catalog-item__icon {
     opacity: 0.3;
   }
+
 }
 
 .catalog-item__description {

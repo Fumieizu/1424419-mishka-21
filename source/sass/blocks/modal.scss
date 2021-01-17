@@ -1,0 +1,131 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 320px;
+  min-height: 336px;
+  box-sizing: border-box;
+  background-color: $basic-white;
+  z-index: 10;
+  border: 1px solid $modal-border;
+  box-shadow: 0 5px 10px $modal-shadow;
+  padding: 30px 30px 45px;
+}
+
+.modal--show {
+  display: block;
+  animation: bounce .6s;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__size-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $second-black;
+  text-align: center;
+  padding: 0;
+  margin: 14px 0 21px;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal__list {
+  @include list-style-none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  flex-wrap: wrap;
+}
+
+.modal__list-item {
+  label {
+    display: flex;
+    justify-content: center;
+    width: 82px;
+    height: 52px;
+    box-sizing: border-box;
+    padding: 15px 5px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: $second-black;
+    border: 2px solid $label-border;
+    text-transform: uppercase;
+  }
+}
+
+.modal__radio {
+  &:checked + label {
+    border: 2px solid $green;
+  }
+
+  &:hover + label {
+    border: 2px solid $size-hover;
+  }
+}
+
+.modal__button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  width: 260px;
+  height: 52px;
+  border: none;
+  background: $green;
+  color: $basic-white;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 568px;
+    padding: 40px 106px 45px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__size-title {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 11px 0 19px;
+  }
+
+  .modal__list-item {
+    label {
+      width: 112px;
+    }
+  }
+
+  .modal__button {
+    width: 350px;
+  }
+}
+
+@keyframes bounce {
+  0% {transform: translate(-50%, -50%) translateY(-2000px)}
+
+  70% {transform: translate(-50%, -50%) translateY(30px)}
+
+  90% {transform: translate(-50%, -50%) translateY(-10px)}
+
+  100% {transform: translate(-50%, -50%) translateY(0)}
+}
