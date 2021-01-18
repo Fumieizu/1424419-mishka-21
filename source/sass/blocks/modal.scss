@@ -3,7 +3,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 320px;
   min-height: 336px;
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 
 .modal--show {
   display: block;
-  animation: bounce .6s;
+  animation: bounce 0.6s;
 }
 
 .modal__title {
@@ -121,11 +121,19 @@
 }
 
 @keyframes bounce {
-  0% {transform: translate(-50%, -50%) translateY(-2000px)}
+  0% {
+    transform: translate(-50%, -50%) translateY(-2000px);
+  }
 
-  70% {transform: translate(-50%, -50%) translateY(30px)}
+  70% {
+    transform: translate(-50%, -50%) translateY(30px);
+  }
 
-  90% {transform: translate(-50%, -50%) translateY(-10px)}
+  90% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
 
-  100% {transform: translate(-50%, -50%) translateY(0)}
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
