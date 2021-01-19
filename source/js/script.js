@@ -1,7 +1,15 @@
+//mobile navigation menu
+
+
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
+
+if (navMain.classList.contains('main-nav--opened')) {
+  navMain.classList.remove('main-nav--opened');
+  navMain.classList.add('main-nav--closed');
+}
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -13,17 +21,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+//modal popup
+
 const overlay = document.querySelector('.overlay');
 const  modal = document.querySelector('.modal');
-const  featuredButton = document.querySelector('.featured__button');
-const  catalogButtons = document.querySelectorAll('.catalog-item__cart');
+const buttons = document.querySelectorAll('.js-modal');
 
-if (featuredButton) {
-  featuredButton.addEventListener('click', function (event) {
-  event.preventDefault();
-  modal.classList.add('modal--show');
-  overlay.classList.add('overlay--show');
-  })
+if (buttons) {
+  for (let button of buttons) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      modal.classList.add('modal--show');
+      overlay.classList.add('overlay--show');
+    })
+  }
 }
 
 if (overlay) {
@@ -34,14 +45,4 @@ if (overlay) {
       overlay.classList.remove('overlay--show');
     }
   })
-}
-
-if (catalogButtons) {
-  for (let catalogButton of catalogButtons) {
-    catalogButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    modal.classList.add('modal--show');
-    overlay.classList.add('overlay--show');
-    })
-  }
 }

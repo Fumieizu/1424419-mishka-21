@@ -73,7 +73,8 @@ exports.sprite = sprite;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin())
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 //Scripts
@@ -131,7 +132,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+  gulp.watch("source/*.html", gulp.series(html));
 }
 
 //Build
