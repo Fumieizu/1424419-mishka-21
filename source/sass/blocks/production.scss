@@ -60,6 +60,7 @@
   background-size: auto;
   border: none;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.2) translate(-40%, -40%);
