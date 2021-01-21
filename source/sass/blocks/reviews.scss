@@ -142,7 +142,10 @@
     &::after {
       bottom: -102px;
       height: 36px;
+      width: 1050px;
       background-size: auto 23px;
+      background-repeat: no-repeat;
+      left: 50px;
     }
 
     @media (min-resolution: 2dppx) {
